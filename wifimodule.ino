@@ -4,8 +4,6 @@ const int RX1 = 11;
 const int TX1 = 10;
 
 
-
-// create SoftwareSerial objects
 SoftwareSerial SoftSerialOne(RX1,TX1);
 
    void setup()
