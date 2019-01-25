@@ -9,6 +9,7 @@ int mid_pos = 90;
 int tip_pos = 90;
 
 void setup() {
+  Serial.begin(9600);
   base.attach(9);
   mid.attach(9);
   tip.attach(9);
@@ -20,4 +21,5 @@ void loop() {
   mid.write(mid_pos);
   tip.write(tip_pos);
   delay(25);
+  Serial.print(base_pos);
 }
